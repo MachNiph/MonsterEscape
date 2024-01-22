@@ -70,15 +70,20 @@ public class NewBehaviourScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag(ground_tag))
+
+        
+
+        if (collision.gameObject.CompareTag(ground_tag) )
         {
             isGrounded = true;
         }
 
-       
 
-        if (collision.gameObject.CompareTag(enemy_tag) || collision.gameObject.CompareTag("collider"))
+
+        if (collision.gameObject.CompareTag(enemy_tag) || collision.gameObject.CompareTag("Wall"))
+
         {
+            Debug.Log("hit");
             HandlePlayerDeath();
             isAlive = false;
             
@@ -96,6 +101,7 @@ public class NewBehaviourScript : MonoBehaviour
         {
             uiController.EnableButtons();
             Destroy(gameObject);
+          
 
         }
     }

@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class Collector : MonoBehaviour
 {
-    private void OnTriggerEnter2D(Collider2D collision)
+   
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Enemy"))
         {
            
-            Enemy collidedEnemy = collision.GetComponent<Enemy>();
+            Enemy collidedEnemy = collision.gameObject.GetComponent<Enemy>();
+
 
             // Change the direction of the collided enemy
             if (collidedEnemy != null)
@@ -18,6 +20,8 @@ public class Collector : MonoBehaviour
             }
         }
 
+        
 
     }
 }
+
