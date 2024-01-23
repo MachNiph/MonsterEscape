@@ -46,11 +46,13 @@ public class UIController : MonoBehaviour
         UpdateScoreText(false); // Update without the "Your Score: " prefix
         scoreText.rectTransform.anchoredPosition = originalScorePosition;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        NewBehaviourScript.isAlive = true;
     }
 
     public void MainMenu()
     {
         SceneManager.LoadScene("MainMenu");
+        NewBehaviourScript.isAlive = true;
     }
 
     public void EnableButtons()

@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: -8052942393817099808}
   - component: {fileID: -9077737773784427409}
   - component: {fileID: 3253310278466617050}
-  - component: {fileID: 656838664858336017}
   m_Layer: 3
   m_Name: Enemy1
   m_TagString: Enemy
@@ -149,8 +148,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ff3a8638f6a1e44bb216741d85fe4ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  headCollider: {fileID: 656838664858336017}
-  bodyCollider: {fileID: 3253310278466617050}
   speed: 0
 --- !u!70 &3253310278466617050
 CapsuleCollider2D:
@@ -184,51 +181,6 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.17296615, y: -0.17833269}
-  m_Size: {x: 0.7532086, y: 1.7533343}
+  m_Offset: {x: -0.18040088, y: -0.0073320866}
+  m_Size: {x: 0.7383391, y: 2.0953355}
   m_Direction: 0
---- !u!61 &656838664858336017
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3326899308667704310}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.21230078, y: 0.9299022}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.29, y: 2.11}
-    newSize: {x: 1.29, y: 2.11}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.76349497, y: 0.18235898}
-  m_EdgeRadius: 0

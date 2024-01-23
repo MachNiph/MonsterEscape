@@ -20,8 +20,7 @@ public class NewBehaviourScript : MonoBehaviour
 
     private string ground_tag = "Ground";
     private string enemy_tag = "Enemy";
-    private string head_tag = "Head";
-
+    
     public SpriteRenderer spritePlayer;
 
     public float movementX;
@@ -80,7 +79,7 @@ public class NewBehaviourScript : MonoBehaviour
 
 
 
-        if (collision.gameObject.CompareTag(enemy_tag) || collision.gameObject.CompareTag("Wall"))
+        if (collision.gameObject.CompareTag(enemy_tag) )
 
         {
             Debug.Log("hit");
@@ -92,7 +91,7 @@ public class NewBehaviourScript : MonoBehaviour
 
    
 
-    private void HandlePlayerDeath()
+    public void HandlePlayerDeath()
     {
        
         UIController uiController = FindAnyObjectByType<UIController>();

@@ -18,7 +18,7 @@ public class SpawnEnemy : MonoBehaviour
 
     IEnumerator EnemySpawn()
     {
-        while(true)
+        while(NewBehaviourScript.isAlive)
         {
             randomIndex = Random.Range(0, monsterTypes.Length);
             randomSide = Random.Range(0, 2);
@@ -27,7 +27,7 @@ public class SpawnEnemy : MonoBehaviour
             if (randomSide == 0)
             {
                 spawnedMonster.transform.position = leftSide.position;
-                spawnedMonster.GetComponent<Enemy>().speed = Random.Range(3, 6);
+                spawnedMonster.GetComponent<Enemy>().speed = Random.Range(13, 16);
             }
             else
             {

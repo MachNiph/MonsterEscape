@@ -5,9 +5,6 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     private Rigidbody2D rb;
-   public Collider2D headCollider;
-   public Collider2D bodyCollider;
-
     [HideInInspector] public float speed;
    
     void Start()

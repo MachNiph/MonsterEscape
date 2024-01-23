@@ -55,7 +55,7 @@ public class GameController : MonoBehaviour
         {
         
             Instantiate(player[char_select]);
-            NewBehaviourScript.isAlive = true;
+         
         }
     }
 }
